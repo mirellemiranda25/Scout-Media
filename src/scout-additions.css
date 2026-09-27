@@ -1,0 +1,19 @@
+/* Add this import at the very top of src/index.css (before @tailwind lines) */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:ital@1&display=swap");
+
+/* Add this anywhere in src/index.css, e.g. right after the existing @layer base blocks */
+.font-display {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
