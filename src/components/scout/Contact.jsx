@@ -9,7 +9,7 @@ const EMAIL = "contact@scoutmedia.co.in";
 // Paste the Web App URL you get from deploying the Apps Script in
 // google-sheets-setup/Code.gs (see README) — that script appends every
 // submission as a new row (Name, Email, Query, Timestamp) in your sheet.
-const SHEET_ENDPOINT = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycby0zOajv3BaBcd6JsEpsFkT2FCXS2uVk04IddhY0akbg2nH0YN3UxHmPVovIDWIKBw/exec";
 
 export default function Contact() {
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
