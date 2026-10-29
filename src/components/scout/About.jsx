@@ -1,10 +1,6 @@
 import Reveal from "@/components/scout/Reveal";
 
-const FOUNDERS = [
-  { name: "Mansi Miranda", num: "01" },
-  { name: "Sanket Shinge", num: "02" },
-  { name: "Raunak Sharma", num: "03" },
-];
+const FOUNDERS = [{ num: "01" }, { num: "02" }, { num: "03" }];
 
 export default function About() {
   return (
@@ -30,10 +26,7 @@ export default function About() {
           {FOUNDERS.map((f, i) => (
             <Reveal key={f.num} delay={i * 0.08}>
               <div className="flex items-center justify-between border-t border-black/10 py-6 first:border-t-0 dark:border-white/10 md:first:border-t">
-                <div>
-                  <p className="font-display text-xl font-semibold text-black dark:text-white">{f.name}</p>
-                  <p className="mt-1 text-xs tracking-[0.2em] text-neutral-500 dark:text-neutral-400">CO-FOUNDER</p>
-                </div>
+                <p className="font-display text-xl font-semibold text-black dark:text-white">Co-Founder</p>
                 <span className="text-xs text-neutral-400 dark:text-neutral-600">{f.num}</span>
               </div>
             </Reveal>
